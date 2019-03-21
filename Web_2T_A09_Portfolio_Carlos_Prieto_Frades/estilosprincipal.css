@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+    
+    
+}
+
+body, html {
+
+	color: white;
+    min-height: 100vh;
+    width: 100%;
+    margin:0;
+}
+
+body{
+    
+    background:url(Fotos/Bosquefondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+
+#container{
+    
+    width: 65%;
+    background-color: rgba(255, 255, 255, 0.85);
+    margin: 0 auto 2vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 108vh;
+      
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  width:34%;
+  justify-content:center;
+  margin:0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  left:33%;
+  top:0;
+
+    
+    
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+ border-left: 1px solid #bbb;
+    
+}
+
+
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: firebrick;
+}
+
+.active {
+  background-color: black;
+}
+   
+.enlace{
+    width: 50%;
+}
+
+.enlace img{
+     width: 100%;
+}
+
+
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+    height: 5%;
+   background-color: firebrick;
+   color: white;
+   text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+     z-index: 50;
+
+
+}
+
+
+h2{
+   font-size: 22px;
+   font-family: "Allerta Stencil";
+}
+    
+
+
+.Img_in {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-self: flex-start;
+    align-self: center;
+    border:solid black 2px;
+    height: 100%;
+}
+
+#clases1{
+    height: 100%;
+    width:auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+
+
+
+.Concept{
+    margin: auto;
+    width: 80%;
+    position: relative;
+
+}
+
+.Animacion{
+    margin: auto;
+    width: 80%;
+    margin-right: 3%;
+}
+
+.Modeling{
+    margin: auto;
+    width: 80%;
+}
+    
+.Espacio{
+    display: flex;
+    height: 10%;
+    align-content: center;
+    justify-content: space-around;
+    margin-top: 1vh;
+
+    
+}
+#logo{
+    width: 50%;
+    height: 40%;
+}
+
+
+.containerOverlay{
+
+    text-align: center;
+    position: relative;
+    
+}
+
+.containerOverlay img{
+    position: relative;
+     z-index: 10;
+    width: 80%;
+}
+
+.containerOverlay p{
+
+    width:80%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    z-index: 20;    
+
+    visibility: hidden;
+
+}
+
+.containerOverlay:hover p{
+
+    visibility: visible;
+    opacity: 1;
+    transition: 1s ease opacity;
+    z-index: 50; 
+ 
+}
+
+.containerOverlay:hover img{
+    transform: scale(1.2);
+    transition: 1s ease all;
+    z-index: 25;
+}
+
+p{
+    font-family: fantasy;
+    font-size: 50px;
+    color: maroon;
+    border: solid 4px black;
+    
+    
+}
+
